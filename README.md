@@ -87,6 +87,7 @@ echo "set thesaurus=~/.dicts/thesaurus.txt" >> "${HOME}/.vimrc"
 
 > ADVANCED (better if you have a lot of configuration for a lot of filetypes)
 > If you are using vim or neovim I recommend this trick : 
+> (It will give you very good plugin-free completion.)
 
 You will need
 - **curl**
