@@ -5,6 +5,7 @@ Dictionaries I managed to collect and generate using a python script that I wrot
 -   frequent.dict
 
       Generated using my DictGen script from analysing word frequencies of:
+
             + All Harry Potter books (for regular english words)
             + A few man pages
             + A few computer science textbooks
