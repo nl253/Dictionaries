@@ -160,8 +160,7 @@ endfunction
 au! FileType * call Init()
 ```
 
-> NOTE depth for this is 3 levels. It might be too much for you ... 
-
+NOTE depth for this is 3 levels. It might be too much for you ... 
 
 PLEASE CHANGE VARIABLES:
     - g:WORKING_DIRS
@@ -169,6 +168,8 @@ PLEASE CHANGE VARIABLES:
     - g:MARKUP
     - g:MARKUP_EXT 
     - g:PROGRAMMING
+
+### What it does 
 
 #### For g:PROGRAMMING types:
 1. look in all g:WORKING_DIRS for files with the same extension with 3 levels of depth.
@@ -182,7 +183,6 @@ Also:
 #### For g:MARKUP types:
 1. look in all g:WORKING_DIRS (3 levels of depth) for files extensions specified by g:MARKUP_EXT.
 2. add to user defined completion 
-
 
 ----------------------------------------------------------------------------------------------
 
