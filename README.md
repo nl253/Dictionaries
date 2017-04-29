@@ -198,10 +198,11 @@ words you made up, and your name, address etc.
 
 For programming languages you will get completion for relevant variable names and things you've written before.
 
-If there are any issues please let me know.
+Now when you press CTRL-N (or CTRL-P)
 
 ![Alt text](screenshot.png?raw=true "popupmenu") 
 ![Alt text](screenshot2.png?raw=true "popupmenu") 
 ![Alt text](screenshot3.png?raw=true "popupmenu") 
 
 
+If there are any issues please let me know.
