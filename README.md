@@ -56,6 +56,35 @@ Dictionaries I managed to collect and generate using a python script that I wrot
 
 ## How do I use it in (N)Vim ?
 
+NOTE before you run any scripts always verify them.
+
+> BASIC SETUP 
+
+Download with curl and put into ~/.dicts or wherever you like.
+
+```sh
+mkdir -p ~/.dicts
+curl -Lo ~/.dicts/thesaurus.txt https://raw.githubusercontent.com/nl253/Dictionaries/master/thesaurus.txt
+curl -Lo ~/.dicts/frequent.dict https://raw.githubusercontent.com/nl253/Dictionaries/master/frequent.dict
+```
+
+If you are a vim user and don't know how to add them as a dict / thesaurus
+This will append it to the end of file.
+
+For Nvim : 
+
+```sh
+echo "set dictionary=~/.dicts/frequent.dict" >> "${HOME}/.config/nvim/init.vim"
+echo "set thesaurus=~/.dicts/thesaurus.txt" >> "${HOME}/.config/nvim/init.vim"
+```
+For Vim : 
+
+```sh
+echo "set dictionary=~/.dicts/frequent.dict" >> "${HOME}/.vimrc"
+echo "set thesaurus=~/.dicts/thesaurus.txt" >> "${HOME}/.vimrc"
+```
+
+> ADVANCED (better if you have a lot of configuration for a lot of filetypes)
 > If you are using vim or neovim I recommend this trick : 
 
 You will need
