@@ -199,12 +199,12 @@ NOTE depth by default for this is 1 level. You might want more.
 
 PLEASE CHANGE VARIABLES:
 
-    - g:WORKING_DIRS
-    - g:DICT_DIR
-    - g:MARKUP
-    - g:MARKUP_EXT 
-    - g:PROGRAMMING
-    - g:DICTS 
+    - g:WORKING_DIRS (list of dirs relative to ~ )
+    - g:DICT_DIR     (string)
+    - g:MARKUP       (list of markup filetypes)
+    - g:MARKUP_EXT   (list of markup extensions you want to collect words from)
+    - g:PROGRAMMING  (list of programming filetypes)
+    - g:DICTS        (list of dicts you want to download)
     
 ### What it does 
 
