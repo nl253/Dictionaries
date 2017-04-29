@@ -34,6 +34,7 @@ Dictionaries I managed to collect and generate using a python script that I wrot
     > `complete`.  2.4 MB is an overkill and you will see a lot of redundant
     > sections from external libraries, frameworks you might not use ... 
     > My advice, stick to omnicompletion from jedi or rope.
+    > https://github.com/python-mode/python-mode
 
 -   shell.dict (tiny)
 
@@ -130,10 +131,12 @@ function! Init()
     if index(g:MARKUP, &filetype) >= 0  " this will be execute for g:MARKUP filetypes 
         setlocal complete=.,w,k,s  " for markup  :: current buffer, windows (splits), dict, thesaurus
         for dir in g:WORKING_DIRS  " this actually isn't recursive 
-            for extension in g:MARKUP_EXT " 3 levels of depth ... 
+            for extension in g:MARKUP_EXT " 1 levels of depth by default
                 execute 'setl complete+=k~/'.dir.'/**.'.extension
-                execute 'setl complete+=k~/'.dir.'/**/**.'.extension  
-                execute 'setl complete+=k~/'.dir.'/**/**/**.'.extension
+                " uncomment to get 2 levels of depth
+                " execute 'setl complete+=k~/'.dir.'/**/**.'.extension  
+                " uncomment to get 3 levels of depth
+                " execute 'setl complete+=k~/'.dir.'/**/**/**.'.extension  
             endfor
         endfor
     " this will be execute for g:PROGRAMMING filetypes
@@ -142,8 +145,10 @@ function! Init()
             setl complete=.,w,t    " current buffer, windows (splits), tags
             for dir in g:WORKING_DIRS
                 execute 'setl complete+=k~/'.dir.'/**.'.expand('%:e')
-                execute 'setl complete+=k~/'.dir.'/**/**.'.expand('%:e')
-                execute 'setl complete+=k~/'.dir.'/**/**/**.'.expand('%:e')
+                " uncomment to get 2 levels of depth
+                "execute 'setl complete+=k~/'.dir.'/**/**.'.expand('%:e')
+                " uncomment to get 3 levels of depth
+                "execute 'setl complete+=k~/'.dir.'/**/**/**.'.expand('%:e')
             endfor
         endif
         if filereadable(g:DICT_DIR . &filetype . '.dict')                       
@@ -160,7 +165,7 @@ endfunction
 au! FileType * call Init()
 ```
 
-NOTE depth for this is 3 levels. It might be too much for you ... 
+NOTE depth by default for this is 1 level. You might want more.
 
 PLEASE CHANGE VARIABLES:
 
@@ -169,11 +174,12 @@ PLEASE CHANGE VARIABLES:
     - g:MARKUP
     - g:MARKUP_EXT 
     - g:PROGRAMMING
-
+    - g:DICTS 
+    
 ### What it does 
 
 #### For g:PROGRAMMING types:
-1. look in all g:WORKING_DIRS for files with the same extension with 3 levels of depth.
+1. look in all g:WORKING_DIRS for files with the same extension 
 2. add them to completion 
 
 Also:
@@ -182,7 +188,7 @@ Also:
   dict to user completion
 
 #### For g:MARKUP types:
-1. look in all g:WORKING_DIRS (3 levels of depth) for files extensions specified by g:MARKUP_EXT.
+1. look in all g:WORKING_DIRS for files extensions specified by g:MARKUP_EXT.
 2. add to user defined completion 
 
 ----------------------------------------------------------------------------------------------
