@@ -148,7 +148,7 @@ function! Init()
         endif
         if filereadable(g:DICT_DIR . &filetype . '.dict')                       
             " if in g:PROGRAMMING and an appropriate dict is available, 
-            " then REPALCE english dict with it and add dict to user defined completion 
+            " then REPLACE english dict with it and add dict to user defined completion 
             " this works because dicts follow the naming convention of {filetype}.dict
             let g:to_exe = 'setl dictionary='. g:DICT_DIR . &filetype . '.dict' " 
             execute g:to_exe                                                    
@@ -159,9 +159,9 @@ endfunction
 
 au! FileType * call Init()
 ```
-> NOTE
-> depth for this is 3 leves 
-> PLEASE CHANGE VARIABLES:
+> NOTE depth for this is 3 levels. It might be too much for you ... 
+
+PLEASE CHANGE VARIABLES:
     - g:WORKING_DIRS
     - g:DICT_DIR
     - g:MARKUP
@@ -187,7 +187,7 @@ Also:
 Now for markup languages you will get completion for things you have written before, like places,
 words you made up, and your name, address etc. 
 
-For programming languages you will get completion for relevant variable names and things you've wirtten before.
+For programming languages you will get completion for relevant variable names and things you've written before.
 
 If there are any issues please let me know.
 
