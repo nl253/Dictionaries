@@ -15,7 +15,7 @@ Dictionaries I managed to collect and generate using a python script that I wrot
 
 -   css.dict
 
-      This one is very good as well.
+      > This one is very good as well.
 
 -   erlang.dict
 
