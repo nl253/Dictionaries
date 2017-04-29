@@ -64,8 +64,8 @@ Download with curl and put into ~/.dicts or wherever you like.
 
 ```sh
 mkdir -p ~/.dicts
-curl -Lo ~/.dicts/thesaurus.txt https://raw.githubusercontent.com/nl253/Dictionaries/master/thesaurus.txt
-curl -Lo ~/.dicts/frequent.dict https://raw.githubusercontent.com/nl253/Dictionaries/master/frequent.dict
+curl -fLo ~/.dicts/thesaurus.txt https://raw.githubusercontent.com/nl253/Dictionaries/master/thesaurus.txt
+curl -fLo ~/.dicts/frequent.dict https://raw.githubusercontent.com/nl253/Dictionaries/master/frequent.dict
 ```
 
 If you are a vim user and don't know how to add them as a dict / thesaurus
