@@ -143,7 +143,7 @@ let g:DICTS = ['frequent.dict', 'thesaurus.txt', 'css.dict', 'sql.dict', 'sh.dic
 
 for dict in g:DICTS
     if ! filereadable(g:DICT_DIR . dict)
-        execute '!curl -o ' . g:DICT_DIR . dict . ' https://raw.githubusercontent.com/nl253/Dictionaries/master/' . dict
+        execute '!curl -fLo ' . g:DICT_DIR . dict . ' https://raw.githubusercontent.com/nl253/Dictionaries/master/' . dict
     endif
 endfor
 " }}}
