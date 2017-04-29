@@ -52,15 +52,6 @@ Dictionaries I managed to collect and generate using a python script that I wrot
 
       Extra spelling entries from vim
 
-
--------------------------------------------------------------------------
-
-## With (N)Vim
-
-![Alt text](screenshot.png?raw=true "popupmenu") 
-![Alt text](screenshot2.png?raw=true "popupmenu") 
-![Alt text](screenshot3.png?raw=true "popupmenu") 
-
 -------------------------------------------------------------------------
 
 ## How do I use it in (N)Vim ?
@@ -208,5 +199,9 @@ words you made up, and your name, address etc.
 For programming languages you will get completion for relevant variable names and things you've written before.
 
 If there are any issues please let me know.
+
+![Alt text](screenshot.png?raw=true "popupmenu") 
+![Alt text](screenshot2.png?raw=true "popupmenu") 
+![Alt text](screenshot3.png?raw=true "popupmenu") 
 
 
