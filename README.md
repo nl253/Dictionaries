@@ -159,7 +159,9 @@ endfunction
 
 au! FileType * call Init()
 ```
+
 > NOTE depth for this is 3 levels. It might be too much for you ... 
+
 
 PLEASE CHANGE VARIABLES:
     - g:WORKING_DIRS
