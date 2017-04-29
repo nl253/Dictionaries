@@ -200,7 +200,7 @@ For programming languages you will get completion for relevant variable names an
 
 If there are any issues please let me know.
 
-![Alt text](screenshot1.png?raw=true "popupmenu") 
+![Alt text](screenshot.png?raw=true "popupmenu") 
 ![Alt text](screenshot2.png?raw=true "popupmenu") 
 ![Alt text](screenshot3.png?raw=true "popupmenu") 
 
