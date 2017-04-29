@@ -35,7 +35,7 @@ Dictionaries I managed to collect and generate using a python script that I wrot
     > `complete`.  2.4 MB is an overkill and you will see a lot of redundant
     > sections from external libraries, frameworks you might not use ... 
     > My advice, stick to omnicompletion from jedi or rope.
-    > https://github.com/python-mode/python-mode
+    > I recommend : https://github.com/python-mode/python-mode
 
 -   shell.dict (tiny)
 
