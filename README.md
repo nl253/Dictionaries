@@ -162,11 +162,11 @@ au! FileType * call Init()
 > NOTE
 > depth for this is 3 leves 
 > PLEASE CHANGE VARIABLES:
-    >> - g:WORKING_DIRS
-    >> - g:DICT_DIR
-    >> - g:MARKUP
-    >> - g:MARKUP_EXT 
-    >> - g:PROGRAMMING
+    - g:WORKING_DIRS
+    - g:DICT_DIR
+    - g:MARKUP
+    - g:MARKUP_EXT 
+    - g:PROGRAMMING
 
 #### For g:PROGRAMMING types:
 1. look in all g:WORKING_DIRS for files with the same extension with 3 levels of depth.
