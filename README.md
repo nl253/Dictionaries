@@ -1,3 +1,13 @@
+
+<!-- vim-markdown-toc GFM -->
+* [Dictionaries](#dictionaries)
+  * [How do I use it in (N)Vim ?](#how-do-i-use-it-in-nvim-)
+    * [What it does](#what-it-does)
+      * [For g:PROGRAMMING types:](#for-gprogramming-types)
+      * [For g:MARKUP types:](#for-gmarkup-types)
+
+<!-- vim-markdown-toc -->
+
 # Dictionaries
 
 Dictionaries I managed to collect and generate using a python script that I wrote <https://github.com/nl253/DictGen>
@@ -221,6 +231,14 @@ Also:
 #### For g:MARKUP types:
 1. look in all g:WORKING_DIRS for files extensions specified by g:MARKUP_EXT.
 2. add to user defined completion 
+
+Basically, if you set these variables properly, it sorts out these options:
+
+  -   complete
+  -   dictionary
+  -   thesaurus
+
+giving you strong, plugin free completion.
 
 ----------------------------------------------------------------------------------------------
 
