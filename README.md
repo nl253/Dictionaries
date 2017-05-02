@@ -238,7 +238,7 @@ Basically, if you set these variables properly, it sorts out these options:
   -   dictionary
   -   thesaurus
 
-giving you strong, plugin free completion.
+giving you strong, plugin free, personalised completion.
 
 ----------------------------------------------------------------------------------------------
 
