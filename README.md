@@ -20,8 +20,8 @@ Dictionaries I managed to collect and generate using a python script that I wrot
             + A few man pages
             + A few computer science textbooks
 
-      > The words have been 'normalised', numbers removed, case removed, very, very
-      > high quality.
+      > The words have been 'normalised', short words removed, stopwords
+      > removed, numbers removed, case removed, very, very high quality.
 
 -   css.dict
 
