@@ -8,6 +8,7 @@
 
 <!-- vim-markdown-toc -->
 
+
 # Dictionaries
 
 Dictionaries I managed to collect and generate using a python script that I wrote <https://github.com/nl253/DictGen>
@@ -16,9 +17,9 @@ Dictionaries I managed to collect and generate using a python script that I wrot
 
       > Generated using my DictGen script from analysing word frequencies of:
 
-            + All Harry Potter books (for regular english words)
-            + A few man pages
-            + A few computer science textbooks
+        + All Harry Potter books (for regular english words)
+        + A few man pages
+        + A few computer science textbooks
 
       > The words have been 'normalised', short words removed, stopwords
       > removed, numbers removed, case removed, very, very high quality.
@@ -242,10 +243,12 @@ giving you strong, plugin free, personalised completion.
 
 ----------------------------------------------------------------------------------------------
 
-Now for markup languages you will get completion for things you have written before, like places,
-words you made up, and your name, address etc. 
+Now for markup languages you will get completion for things you have
+written before, like places, words you made up, and your name, address
+etc.
 
-For programming languages you will get completion for relevant variable names and things you've written before.
+For programming languages you will get completion for relevant
+variable names and things you've written before.
 
 Now when you press CTRL-N (or CTRL-P)
 
