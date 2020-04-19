@@ -222,7 +222,7 @@ PLEASE CHANGE VARIABLES:
 
 #### For g:PROGRAMMING types:
 1. look in all g:WORKING_DIRS for files with the same extension 
-2. add them to completion 
+2. add them to completion
 
 Also:
 - if you have a dict for this programming language (eg for java java.dict),
